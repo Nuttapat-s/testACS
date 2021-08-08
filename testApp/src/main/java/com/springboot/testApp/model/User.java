@@ -13,7 +13,7 @@ public class User {
 	private String username;
 	private String password;
 	private String phoneNumber;
-	private int salay;
+	private int salary;
 	private String referenceCode;
 	public String getUsername() {
 		return username;
@@ -39,11 +39,11 @@ public class User {
 	public void setPhoneNumber(String phoneNumber) {
 		this.phoneNumber = phoneNumber;
 	}
-	public int getSalay() {
-		return salay;
+	public int getSalary() {
+		return salary;
 	}
-	public void setSalay(int salay) {
-		this.salay = salay;
+	public void setSalary(int salary) {
+		this.salary = salary;
 	}
 	public String getReferenceCode() {
 		return referenceCode;

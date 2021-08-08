@@ -90,7 +90,6 @@ public class UserService {
 			jsonStatus.setResultDesc("DB error");
 			return ResponseEntity.status(HttpStatus.BAD_GATEWAY).body(jsonStatus);
 		}
-
 		jsonStatus.setResultCode("200");
 		jsonStatus.setResultDesc("SUCCESS");
 
@@ -111,7 +110,7 @@ public class UserService {
 				jsonStatus.setResultDesc("User not found");
 				return ResponseEntity.status(HttpStatus.NOT_FOUND).body(jsonStatus);
 			} else {
-				String type = validateMemberType(result.get(0).getSalay());
+				String type = validateMemberType(result.get(0).getSalary());
 				if(type.equals("")) {
 					jsonStatus.setResultCode("400");
 					jsonStatus.setResultDesc("Rejects");
